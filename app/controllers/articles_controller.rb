@@ -4,8 +4,9 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    # debug
+    # byebug
     # instance variable, @
-    byebug
     @article = Article.find(params[:id])
     print "Article: " + @article.title + "\n"
   end
