@@ -11,12 +11,12 @@
   </thead>
 
   <tbody>
-    <% @articles.each do |anything| %>
+    <% @articles.each do |theitem| %>
       <tr>
-        <td><%= anything.title %></td>
-        <td><%= anything.description %></td>
+        <td><%= theitem.title %></td>
+        <td><%= theitem.description %></td>
         <td>
-          <a href="/articles/<%= anything.id %>">Show</a>
+          <a href="/articles/<%= theitem.id %>">Show</a>
         </td>
     </tr>
     <% end %>
