@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "alpha"]
+	url = git@github.com:sunpochin/alpha-blog.git
+	fetch = +refs/heads/*:refs/remotes/alpha/*
