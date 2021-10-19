@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 3bef9b2868a82c04d1b372f4f0d861b474b1bf2c sun pochin <sunpochin@gmail.com> 1633082894 +0800	commit (initial): adding create_articles migration
-3bef9b2868a82c04d1b372f4f0d861b474b1bf2c 7f928e2a582fb289078639da996014fd49f321c8 sun pochin <sunpochin@gmail.com> 1634171732 +0800	commit: adding article
-7f928e2a582fb289078639da996014fd49f321c8 1ba2f6ed01383e54883661f4d1d24a85a44b5e80 sun pochin <sunpochin@gmail.com> 1634214955 +0800	commit: updating articles
