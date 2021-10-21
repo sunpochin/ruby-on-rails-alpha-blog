@@ -1,5 +1,23 @@
 # README
 
+* Deployment instructions<br>
+locally, do this 2 cmds first: <br>
+```rails db:migrate```<br>
+```yarn```<br>
+then<br>
+```rails s```
+
+* "For an existing Heroku app
+
+If you have already created your Heroku app, you can easily add a remote to your local repository with the heroku git:remote command. All you need is your Heroku app’s name:
+
+heroku git:remote -a thawing-inlet-61413
+set git remote heroku to https://git.heroku.com/thawing-inlet-61413.git"
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -19,7 +37,6 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
 * ...
 
