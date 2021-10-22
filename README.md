@@ -7,8 +7,16 @@ locally, do this 2 cmds first: <br>
 then<br>
 ```rails s```
 
-* "For an existing Heroku app
+* For an existing Heroku app<br>
+```git add .```<br>
+```git commit -am"update before push to heroku"```<br>
+```heroku git:remote -a ror-blog-pochin```<br>
+```git push heroku main```<br>
+```heroku run rails db:migrate```<br>
 
+* https://devcenter.heroku.com/articles/git
+
+For an existing Heroku app
 If you have already created your Heroku app, you can easily add a remote to your local repository with the heroku git:remote command. All you need is your Heroku app’s name:
 
 heroku git:remote -a thawing-inlet-61413
