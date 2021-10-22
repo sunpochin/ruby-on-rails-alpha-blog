@@ -1,7 +1,12 @@
 class User < ApplicationRecord
-  # validates :title, presence: true, 
-  #   length: { minimum: 5, maximum: 100 }
-  # validates :description, presence: true,     
-  #   length: { minimum: 5, maximum: 300 }
+  validates :username, length: {min: 3, max: 60},
+    uniqueness: { case_sensitive: true },
+    presence: true
+
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i    
+  validates :email, length: {min: 3, max: 60},
+    presence: true,
+    uniqueness: {case_sensitive: true}, 
+    format: { with: VALID_EMAIL_REGEX }
 end
 
