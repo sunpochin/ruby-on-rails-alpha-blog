@@ -1,12 +1,13 @@
 class User < ApplicationRecord
-  validates :username, length: {min: 3, max: 60},
-    uniqueness: { case_sensitive: true },
-    presence: true
+  has_many :articles
+  validates :username, presence: true, 
+      uniqueness: { case_sensitive: false }, 
+      length: { minimum: 3, maximum: 25 }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, 
+      uniqueness: { case_sensitive: false }, 
+      length: { maximum: 105 },
+      format: { with: VALID_EMAIL_REGEX }
 
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i    
-  validates :email, length: {min: 3, max: 60},
-    presence: true,
-    uniqueness: {case_sensitive: true}, 
-    format: { with: VALID_EMAIL_REGEX }
-end
+  end
 
