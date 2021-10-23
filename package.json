@@ -1,5 +1,5 @@
 {
-  "name": "beta-blog",
+  "name": "pochin-rails",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
