@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   resources :articles
 
   get 'signup', to: 'users#new'
-  # get 'login', to: 'sessions#new'
-  post 'users', to: 'users#create'
+  # post 'users', to: 'users#create'
+  # resources :users, except: [:new]
+  resources :users
+
 end
 
 

@@ -7,9 +7,10 @@
       <p class="lead">This is my Ruby on Rails demo.</p>
       <hr class="my-4">
 
-      <%# <p class="lead">
-        <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a>
-      </p> %>
+      <p class="lead">
+        <%# <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a> %>
+        <%= link_to "Sign up!", signup_path, class: "btn btn-success btn-lg" %>
+      </p>
     </div>
   </div>
 
