@@ -9,7 +9,9 @@
 
       <p class="lead">
         <%# <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a> %>
+      <% if !logged_in? %>
         <%= link_to "Sign up!", signup_path, class: "btn btn-success btn-lg" %>
+      <% end %>
       </p>
     </div>
   </div>
