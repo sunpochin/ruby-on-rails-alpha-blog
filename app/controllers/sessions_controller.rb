@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       # Sign the user in and redirect to the user's show page.
       session[:user_id] = user.id
-      flash[:error] = "#{user.username} logged in succesfully."
+      flash[:notice] = "#{user.username} logged in succesfully."
       # sign_in user
       redirect_to user
     else
