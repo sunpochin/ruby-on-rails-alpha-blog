@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_user, except: [:edit, :update]
   before_action :require_same_user, only: [:edit, :update, :destroy]
 
@@ -40,12 +40,14 @@ class UsersController < ApplicationController
     else
       render :new
     end
-    # @user = User.new(user_params)
-    # if @user.save
-    #   redirect_to root_path, notice: "Signed up!"
-    # else
-    #   render :new
-    # end
+  end
+
+  def destroy
+    puts "destroy user: #{@user.username}" 
+    @user.destroy
+    session[:user_id] = nil
+    flash[:notice] = "#{@user.username} deleted!"
+    redirect_to articles_path
   end
 
   private
