@@ -18,9 +18,9 @@ then<br>
 ```heroku run rails db:migrate```<br>
 
 # Build status:
-* master branch:
+* main branch:
 ![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog.svg?style=shield)
 
 * personal dev branch status:
-![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-branch.svg?style=shield)
+![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-dev.svg?style=shield)
 
