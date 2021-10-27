@@ -22,8 +22,8 @@ jobs:
       - run:
           name: bundle update
           command: bundle update --bundler
-      - sss:
-          name: test
+      - run:
+          name: rails test
           command: rails test
       - ruby/bundle-install
 
