@@ -17,14 +17,14 @@ jobs:
     steps:
       - checkout
       - run:
-          name: gem install bunlder
+          name: run gem install bundler
           command: gem install bundler -v 2.1.4
       # - run:
-      #     name: bundle update
+      #     name: run bundle update
       #     command: bundle update --bundler
       - ruby/bundle-install
       - run:
-          name: rails test
+          name: run rails test
           command: rails test
 
 # Invoke jobs via workflows
