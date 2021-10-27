@@ -1,4 +1,5 @@
 # README
+* Demo site: https://ror-blog-pochin.herokuapp.com/
 * This is a code-along project of "The Complete Ruby on Rails Developer Course" by Mashrur Hossain et al. on udemy.
 * This projects demos a blog with basic CRUD operation and basic unit test, integration test.
 * The frontend is bootstrap and backend using SQLite for development and PostgreSQL for production on heroku.
