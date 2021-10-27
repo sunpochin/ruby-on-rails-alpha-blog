@@ -232,7 +232,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap-sass (>= 3.4.1)
-  bundler (~> 2.2.29)
+  bundler (>= 1.15.0)
   byebug
   capybara (>= 3.26)
   jbuilder (~> 2.7)
