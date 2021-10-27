@@ -23,6 +23,9 @@ jobs:
           name: run bundle update
           command: bundle update --bundler
       - run:
+          name: yarn add bootstrap
+          command: yarn add bootstrap
+      - run:
           name: run rails test
           command: rails test
       - ruby/bundle-install
