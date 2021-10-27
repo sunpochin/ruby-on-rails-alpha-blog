@@ -17,7 +17,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Which bundler?
+          name: gem install bunlder
+          command: gem install bundler -v 2.1.4
+      - update:
+          name: bundle update
           command: bundle update --bundler
       - ruby/bundle-install
 
