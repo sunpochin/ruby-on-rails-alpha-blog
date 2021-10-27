@@ -19,13 +19,13 @@ jobs:
       - run:
           name: gem install bunlder
           command: gem install bundler -v 2.1.4
-      - run:
-          name: bundle update
-          command: bundle update --bundler
+      # - run:
+      #     name: bundle update
+      #     command: bundle update --bundler
+      - ruby/bundle-install
       - run:
           name: rails test
           command: rails test
-      - ruby/bundle-install
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
