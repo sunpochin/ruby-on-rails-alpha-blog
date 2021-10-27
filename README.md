@@ -17,3 +17,10 @@ then<br>
 ```git push heroku main```<br>
 ```heroku run rails db:migrate```<br>
 
+# Build status:
+* master branch:
+![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog.svg?style=shield)
+
+* personal dev branch status:
+![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-branch.svg?style=shield)
+
