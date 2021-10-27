@@ -7,6 +7,7 @@ ruby '2.6.8'
 gem 'bundler', '~>2.2.29'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'bootstrap', '~> 4.4.1'
+gem 'bootstrap-sass', '3.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
