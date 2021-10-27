@@ -22,6 +22,4 @@ then<br>
 [![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/main.svg?style=shield)](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/main)
 
 * personal dev branch status:
-![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-dev.svg?style=shield)
-
-
+[![CircleCI](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-dev.svg?style=shield)](https://circleci.com/gh/sunpochin/ruby-on-rails-alpha-blog/tree/pochin-dev)
