@@ -24,7 +24,10 @@ jobs:
           command: bundle update --bundler
       - run:
           name: yarn add bootstrap
-          command: yarn add bootstrap
+          command: yarn add bootstrap@4.4.1
+      - run:
+          name: rails db:migrate 
+          command: rails db:migrate RAILS_ENV=test
       - run:
           name: run rails test
           command: rails test
