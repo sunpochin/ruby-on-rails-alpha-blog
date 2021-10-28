@@ -33,7 +33,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <% if logged_in? && current_user.admin? %>
-            <%= link_to "Create new category", new_article_path, class: "dropdown-item" %>
+            <%= link_to "Create new category", new_category_url, class: "dropdown-item" %>
           <% end %>
           <%= link_to "View categories", categories_path, class: "dropdown-item" %>
 
