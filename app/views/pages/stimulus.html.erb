@@ -1,0 +1,10 @@
+<div class="contrainer text-center">
+  <%= content_tag :div, nil, data: {controller: "hello"} do %>
+    <h1 data-target="hello.heading">hello page</h1>
+    <h1 data-target="hello.haha">haha block</h1>
+
+    <div class="btn btn-primary" data-action="click->hello#greet">Say Hello</div>
+
+  <% end %>
+</div>
+
